@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>testreport</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>testreport</h1>
+<p class='attribute'><strong>Start Time:</strong> 2020-06-13 00:10:38</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:23.663137</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
+
+<p class='description'>testcase</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test01_store_group.belle</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>testStore</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 开始测试
+你好！刘永强体育 欢迎进入！
+b'\r\n&lt;!DOCTYPE html&gt;\r\n\r\n\r\n\r\n\r\n\r\n\r\n&lt;html lang="en"&gt;\r\n&lt;head&gt;\r\n    &lt;meta charset="UTF-8"&gt;\r\n    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;\r\n    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;\r\n    &lt;title&gt;\xe7\x99\xbe\xe4\xb8\xbd\xe7\xbb\x9f\xe4\xb8\x80\xe7\x99\xbb\xe5\xbd\x95\xe5\xb9\xb3\xe5\x8f\xb0&lt;/title&gt;\r\n    \r\n    &lt;link rel="stylesheet" type="text/css"\r\n          href="//s-test.belle.net.cn/sso-cas/resources/css/bootstrap.min.css?version=1.0.7"/&gt;\r\n    &lt;link rel="stylesheet" type="text/css"\r\n          href="//s-test.belle.net.cn/sso-cas/resources/css/iconFont/iconfont.css?version=1.0.7"/&gt;\r\n    &lt;link rel="stylesheet" type="text/css" href="//s-test.belle.net.cn/sso-cas/resources/css/login.css?version=1.0.7"/&gt;\r\n    &lt;link rel="stylesheet" type="text/css"\r\n          href="//s-test.belle.net.cn/sso-cas/resources/css/postbirdAlertBox.min.css?version=1.0.7"/&gt;\r\n    &lt;link rel="stylesheet" type="text/css"\r\n          href="//s-test.belle.net.cn/sso-cas/resources/css/verificationCode.css?version=1.0.7"/&gt;\r\n    &lt;link rel="shortcut icon" href="//s-test.belle.net.cn/sso-cas/resources/images/icon.png" type="image/x-icon"/&gt;\r\n\r\n    &lt;script type="text/javascript"\r\n            src="//s-test.belle.net.cn/sso-cas/resources/js/jquery.min.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript"\r\n            src="//s-test.belle.net.cn/sso-cas/resources/js/popper.min.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript"\r\n            src="//s-test.belle.net.cn/sso-cas/resources/js/bootstrap.min.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript"\r\n            src="//s-test.belle.net.cn/sso-cas/resources/js/postbirdAlertBox/postbirdAlertBox.min.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript"\r\n            src="//s-test.belle.net.cn/sso-cas/resources/js/postbirdAlertBox/message.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript" src="//s-test.belle.net.cn/sso-cas/resources/js/index.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript" src="//s-test.belle.net.cn/sso-cas/resources/js/login.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript" src="//s-test.belle.net.cn/sso-cas/resources/js/code/jigsaw.min.js?version=1.0.7"&gt;&lt;/script&gt;\r\n    &lt;script type="text/javascript" src="//s-test.belle.net.cn/sso-cas/resources/js/verification_code.js?version=1.0.7"&gt;&lt;/script&gt;\r\n&lt;/head&gt;\r\n\r\n&lt;body id="cas"&gt;\r\n&lt;div class="testStyle"&gt;\r\n    &lt;img class="leftImage" src="//s-test.belle.net.cn/sso-cas/resources/images/belle_logo.png?version=1.0.7"&gt;\r\n    &lt;p class="h3Style"&gt;\xe7\xbb\x9f\xe4\xb8\x80\xe7\x99\xbb\xe5\xbd\x95\xe5\xb9\xb3\xe5\x8f\xb0&lt;/p&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;script type="text/javascript"&gt;\r\n    var _basePath = "https://sso-test.belle.net.cn:443/cas/";\r\n    var serverPath = "https://sso-test.belle.net.cn";\r\n    var _domainStatic = "//s-test.belle.net.cn/sso-cas";\r\n    var _staticVersion = "1.0.7";\r\n&lt;/script&gt;\r\n\n\n\n&lt;!-- \xe7\x99\xbb\xe5\xbd\x95 --&gt;\n&lt;main class="login-main"&gt;\n\t&lt;input type="hidden" id="loginTicket" name="loginTicket" value="LT-36445-f57ll0QCEbFR0zmC9rr69FkRgEegRi-cas-server" style="display:none;"/&gt;\n\t\n\t&lt;div class="loginLeftDivClass" href=""&gt;\n\t\t&lt;img class="loginLeftBgImage" src="//s-test.belle.net.cn/sso-cas/resources/images/login_bg.png?version=1.0.7"&gt;\n\t&lt;/div&gt;\n\t&lt;div class="login-box"&gt;\n\t\t&lt;div class="scanImageDivClass"&gt;\n\t\t\t&lt;img class="scanAlert" src="//s-test.belle.net.cn/sso-cas/resources/images/alert.png?version=1.0.7"&gt;\n\t\t\t&lt;img id="scan_code" class="scanLogin"\n\t\t\t     src="//s-test.belle.net.cn/sso-cas/resources/images/icon_code.jpg?version=1.0.7"&gt;\n\t\t\t&lt;img id="scan_pc" class="scanLogin"\n\t\t\t     src="//s-test.belle.net.cn/sso-cas/resources/images/icon_pc.jpg?version=1.0.7"&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;div id="qrScan_login_div" class="modal-body scan"&gt;\n\t\t\t&lt;h4 class="modal-title user-select-none "&gt;\xe6\x89\xab\xe7\xa0\x81\xe7\x99\xbb\xe5\xbd\x95&lt;/h4&gt;\n\t\t\t&lt;div class="scanImage"&gt;\n\t\t\t\t&lt;p style="text-align:center; cursor: pointer; "&gt;\n\t\t\t\t\t&lt;img src="qrCode?loginTicket=LT-36445-f57ll0QCEbFR0zmC9rr69FkRgEegRi-cas-server"\n\t\t\t\t\t     onClick="this.src=\'qrCode?timestamp=\'+new Date().getTime()+\'&amp;loginTicket=LT-36445-f57ll0QCEbFR0zmC9rr69FkRgEegRi-cas-server\';"/&gt;\n\t\t\t\t&lt;/p&gt;\n\t\t\t&lt;/div&gt;\n\t\t\t&lt;h4 class="textClass"&gt;\xe4\xb8\xba\xe7\xa1\xae\xe4\xbf\x9d\xe6\x82\xa8\xe7\x9a\x84\xe8\xb4\xa6\xe6\x88\xb7\xe5\xae\x89\xe5\x85\xa8&lt;/h4&gt;\n\t\t\t&lt;div class="messageClass"&gt;\n\t\t\t\t\xe8\xaf\xb7\xe4\xbd\xbf\xe7\x94\xa8\n\t\t\t\t&lt;a class="disPlayScan" href=""&gt;\xe3\x80\x90\xe7\x99\xbe\xe7\x81\xb5APP\xe3\x80\x91&lt;/a&gt;\n\t\t\t\t\xe6\x89\xab\xe7\xa0\x81\xe7\x99\xbb\xe5\xbd\x95\n\t\t\t\t&lt;section class="phone-container"&gt;\n\t\t\t\t\t&lt;div class="phone-main"&gt;\n\t\t\t\t\t\t&lt;div class="phone-item"&gt;\n\t\t\t\t\t\t\t&lt;img class="phone-image" src="//s-test.belle.net.cn/sso-cas/resources/images/belle_app.png?version=1.0.7"\n\t\t\t\t\t\t\t     alt="bailing"&gt;\n\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/section&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t\n\t\t&lt;div id="qrScan_login_success" class="modal-body scan"&gt;\n\t\t\t&lt;h4 class="modal-title user-select-none "&gt;\xe6\x89\xab\xe7\xa0\x81\xe7\x99\xbb\xe5\xbd\x95&lt;/h4&gt;\n\t\t\t&lt;div class="scanImage"&gt;\n\t\t\t\t&lt;p style="text-align:center; cursor: pointer; "&gt;\n\t\t\t\t\t&lt;img src="//s-test.belle.net.cn/sso-cas/resources/images/code-3.png?version=1.0.7"/&gt;\n\t\t\t\t&lt;/p&gt;\n\t\t\t&lt;/div&gt;\n\t\t\t&lt;div class="messageClass" style="text-align: center;" id="qrScan_base_userName"&gt;""&lt;/div&gt;\n\t\t\t&lt;div class="messageClass"&gt;\n\t\t\t\t\xe6\x89\xab\xe7\xa0\x81\xe6\x88\x90\xe5\x8a\x9f,\xe8\xaf\xb7\xe4\xbd\xbf\xe7\x94\xa8\n\t\t\t\t&lt;a class="disPlayScan" href=""&gt;\xe3\x80\x90\xe7\x99\xbe\xe7\x81\xb5APP\xe3\x80\x91&lt;/a&gt;\n\t\t\t\t\xe7\xa1\xae\xe8\xae\xa4\xe7\x99\xbb\xe5\xbd\x95\n\t\t\t&lt;/div&gt;\n\t\t\t&lt;div style="text-align:center;margin-top:10px;"&gt;\n\t\t\t\t&lt;a id="scanAgainQrCode" href="#" onclick="scanAgainQrCode()"&gt;\xe9\x87\x8d\xe6\x96\xb0\xe6\x89\xab\xe7\xa0\x81&lt;/a&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t\n\t\t&lt;div id="accountLoginDiv" class="modal-body login" id="login"&gt;\n\t\t\t&lt;h4 class="modal-title user-select-none "&gt;\xe8\xb4\xa6\xe6\x88\xb7\xe7\x99\xbb\xe5\xbd\x95&lt;/h4&gt;\n\t\t\t&lt;!-- \xe7\x99\xbb\xe5\xbd\x95 --&gt;\n\t\t\t&lt;form id="fm1" class="aBillFrom clearfix" action="/cas/login;jsessionid=7B555080485EE92542BD701CAA5AB790?service=https%3A%2F%2Fsso-test.belle.net.cn%2F" method="post"&gt;\n\t\t\t\t\n\t\t\t\t&lt;div id="error_msg" class="errors"&gt;&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;div class="form-group user-form"&gt;\n\t\t\t\t\t&lt;i class="iconfont icon-login-user"&gt;&lt;/i&gt;\n\t\t\t\t\t&lt;input id="username" name="username" tabindex="1" placeholder="\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe4\xb8\x80\xe8\xb4\xa6\xe9\x80\x9a\xe5\xb8\x90\xe5\x8f\xb7/\xe6\x89\x8b\xe6\x9c\xba\xe5\x8f\xb7/\xe5\xb7\xa5\xe5\x8f\xb7" class="form-control is-invalid" type="text" value="" size="25" autocomplete="off"/&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class="form-group user-form"&gt;\n\t\t\t\t\t&lt;i class="iconfont icon-login-password"&gt;&lt;/i&gt;\n\t\t\t\t\t&lt;input id="password" name="password" tabindex="2" placeholder="\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81" class="form-control" type="password" value="" size="25" autocomplete="off"/&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class="form-group loginCodeFrom clearfix"&gt;\n\t\t\t\t\t&lt;div class="codeBox float-right"&gt;\n\t\t\t\t\t\t&lt;input id="captcha" name="captcha" tabindex="3" type="hidden" class="form-control float-left codeInput" value="" autocomplete="off"/&gt;\n\t\t\t\t\t\t&lt;div id="captcha_status" onclick="loadCode()"&gt;\n\t\t\t\t\t\t\t&lt;div id="click_class"  class="geetest_holder geetest_wind geetest_radar_click_hide"\n\t\t\t\t\t\t\t\t\t\t\tstyle="width: 310px;"&gt;\n\t\t\t\t\t\t\t\t&lt;div class="geetest_btn"&gt;\n\t\t\t\t\t\t\t\t\t&lt;div class="geetest_radar_btn"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_radar"&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_ring"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_small"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_sector" style="transform: rotate(96.2852deg);"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_small"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_cross"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_h"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_v"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_dot"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_scan"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_h"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_status"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_bg"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_hook"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_ie_radar"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_radar_tip" tabindex="0" aria-label="\xe7\x82\xb9\xe5\x87\xbb\xe6\x8c\x89\xe9\x92\xae\xe8\xbf\x9b\xe8\xa1\x8c\xe9\xaa\x8c\xe8\xaf\x81" style="outline-width: 0px;"&gt;\n                     &lt;span class="geetest_radar_tip_content"&gt;\xe7\x82\xb9\xe5\x87\xbb\xe6\x8c\x89\xe9\x92\xae\xe8\xbf\x9b\xe8\xa1\x8c\xe9\xaa\x8c\xe8\xaf\x81&lt;/span&gt;\n\t\t\t\t\t\t\t\t\t\t &lt;span class="geetest_reset_tip_content"&gt;\xe8\xaf\xb7\xe7\x82\xb9\xe5\x87\xbb\xe9\x87\x8d\xe8\xaf\x95&lt;/span&gt;\n\t\t\t\t\t\t\t\t\t\t &lt;span class="geetest_radar_error_code"&gt;&lt;/span&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_other_offline geetest_offline"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t&lt;div class="geetest_ghost_success"&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_btn"&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_box"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_show"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_pie"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_filter"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_mask"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_correct"&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_icon"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;div class="geetest_success_radar_tip"&gt;\n                        &lt;span id="success_status" class="geetest_success_radar_tip_content"&gt;&lt;/span&gt;\n\t\t\t\t\t\t\t\t\t\t\t\t&lt;span class="geetest_success_radar_tip_timeinfo"&gt;&lt;/span&gt;\n\t\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t\t\t&lt;div class="geetest_slide_icon"&gt;&lt;/div&gt;\n\t\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;input type="hidden" name="lt" value="LT-36445-f57ll0QCEbFR0zmC9rr69FkRgEegRi-cas-server"/&gt;\n\t\t\t\t&lt;input type="hidden" name="execution" value="e1s1"/&gt;\n\t\t\t\t&lt;input type="hidden" name="_eventId" value="submit"/&gt;\n\t\t\t\t&lt;input type="hidden" id="isFromQrCode" name="isFromQrCode" value="0"/&gt;\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t&lt;input class="btn btn-primary btn-from" id="submit_name_password" name="submit" type="submit"\n\t\t\t\t       accesskey="l" value="\xe7\x99\xbb\xe5\xbd\x95" tabindex="5"/&gt;\n\t\t\t\t&lt;div class="form-bar"&gt;\n\t\t\t\t\t&lt;span class="form-bar-item codeLogin-btn"&gt;\xe7\x9f\xad\xe4\xbf\xa1\xe7\x99\xbb\xe5\xbd\x95&lt;/span&gt;\n\t\t\t\t\t&lt;span class="form-bar-item forget-psd-btn" id="forgetPwd" onclick="forgetPwd()"&gt;\xe6\x89\xbe\xe5\x9b\x9e\xe5\xaf\x86\xe7\xa0\x81&lt;/span&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;!-- &lt;span class="old-enter"&gt;\n\t\t\t\t\xe6\x97\xa7\xe7\x89\x88\xe5\x85\xa5\xe5\x8f\xa3\n\t\t\t\t&lt;i class="icon iconfont icon-xiangyoujiantou"&gt;&lt;/i&gt;\n\t\t\t\t&lt;/span&gt; --&gt;\n\t\t\t&lt;/form&gt;\n\t\t\n\t\t&lt;/div&gt;\n\t\t&lt;!-- \xe7\x9f\xad\xe4\xbf\xa1\xe7\x99\xbb\xe5\xbd\x95  --&gt;\n\t\t&lt;div id="codeLoginDiv" class="modal-body codeLogin"&gt;\n\t\t\t&lt;i class="icon iconfont icon-guanbi close-icon"&gt;&lt;/i&gt;\n\t\t\t&lt;h4 class="modal-title hoverDefault "&gt;\xe7\x9f\xad\xe4\xbf\xa1\xe9\xaa\x8c\xe8\xaf\x81\xe7\x99\xbb\xe5\xbd\x95&lt;/h4&gt;\n\t\t\t&lt;form id="fm2" class="aBillFrom clearfix" action="/cas/login;jsessionid=7B555080485EE92542BD701CAA5AB790?service=https%3A%2F%2Fsso-test.belle.net.cn%2F" method="post"&gt;\n\t\t\t\t\n\t\t\t\t&lt;div id="sms_error_msg" class="errors"&gt;&lt;/div&gt;\n\t\t\t\t&lt;div class="form-group user-form"&gt;\n\t\t\t\t\t&lt;i class="iconfont icon-login-user"&gt;&lt;/i&gt;\n\t\t\t\t\t&lt;input id="tel_number" name="tel_number" tabindex="1" placeholder="\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe6\x89\x8b\xe6\x9c\xba\xe5\x8f\xb7" class="form-control is-invalid" type="text" value="" size="25" autocomplete="off"/&gt;\n\t\t\t\t\t&lt;div class="invalid-feedback"&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class="form-group user-form"&gt;\n\t\t\t\t\t&lt;i class="iconfont icon-login-password"&gt;&lt;/i&gt;\n\t\t\t\t\t&lt;input id="tel_password" name="password" tabindex="2" placeholder="\xe8\xaf\xb7\xe8\xbe\x93\xe5\x85\xa5\xe5\xaf\x86\xe7\xa0\x81" class="form-control" type="password" value="" size="25" autocomplete="off"/&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class="form-group"&gt;\n\t\t\t\t\t&lt;div class="codeLoginBox"&gt;\n\t\t\t\t\t\t&lt;input id="tel_captcha" name="tel_captcha" tabindex="3" placeholder="\xe5\x8a\xa8\xe6\x80\x81\xe9\xaa\x8c\xe8\xaf\x81\xe7\xa0\x81" class="form-control codeInput" type="text" value="" size="6" autocomplete="off"/&gt;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&lt;div&gt;\n\t\t\t\t\t\t\t&lt;input class="btn btn-primary getCodeBtn-from" id="send_captcha_btn" type="button"\n\t\t\t\t\t\t\t       value="\xe8\x8e\xb7\xe5\x8f\x96\xe9\xaa\x8c\xe8\xaf\x81\xe7\xa0\x81"/&gt;\n\t\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t&lt;input type="hidden" name="randomKey" id="randomKey" value=""/&gt;\n\t\t\t\t&lt;input type="hidden" name="tel_flag" value="1"/&gt;\n\t\t\t\t&lt;input type="hidden" name="lt" value="LT-36445-f57ll0QCEbFR0zmC9rr69FkRgEegRi-cas-server"/&gt;\n\t\t\t\t&lt;input type="hidden" name="execution" value="e1s1"/&gt;\n\t\t\t\t&lt;input type="hidden" name="_eventId" value="submit"/&gt;\n\t\t\t\t\n\t\t\t\t&lt;div&gt;\n\t\t\t\t\t\t\n\t\t\t\t\t&lt;input type="submit" class="btn btn-primary btn-from" name="submit" value="\xe7\x99\xbb\xe5\xbd\x95" tabindex="5"/&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;div class="form-bar"&gt;\n\t\t\t\t\t&lt;div class="codeBacklogin"&gt;\n\t\t\t\t\t\t&lt;span class="form-bar-item backlogin-btn"&gt;\xe5\xb8\x90\xe5\x8f\xb7\xe5\xaf\x86\xe7\xa0\x81\xe7\x99\xbb\xe5\xbd\x95&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;span class="form-bar-item forget-psd-btn" id="forgetPwd" onclick="forgetPwd()"&gt;\xe6\x89\xbe\xe5\x9b\x9e\xe5\xaf\x86\xe7\xa0\x81&lt;/span&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t&lt;/form&gt;\n\t\t&lt;/div&gt;\n\t\n\t&lt;/div&gt;\n&lt;/main&gt;\n\n&lt;div class="modal fade captcha" id="verificationCode"&gt;\n\t&lt;div class="modal-dialog" role="document"&gt;\n\t\t&lt;div class="modal-content"&gt;\n\t\t\t&lt;i class="icon iconfont close-icon-captcha"\n\t\t\t   onclick="javascript:$(\'#verificationCode\').modal(\'hide\')"&gt;&lt;span style="font-size: 20px;top: 2px;"&gt;&amp;times;&lt;/span&gt;&lt;/i&gt;\n\t\t\t&lt;div class="modal-body" style="width: 360px;"&gt;\n\t\t\t\t&lt;div style="height: 20px;margin-top: 20px"&gt;&lt;/div&gt;\n\t\t\t\t&lt;div id="validateCode"&gt;&lt;/div&gt;\n\t\t\t\t&lt;div id="msg"&gt;&lt;/div&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;script&gt;\n&lt;/script&gt;\n\n\n\n  &lt;/body&gt;\n&lt;/html&gt;\n\n\n'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
