@@ -17,20 +17,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/config.ini">
+      <file leaf-file-name="test_login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-10">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="e#15#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js获取元素和jquery语法.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train/js获取元素和jquery语法.py">
+      <file leaf-file-name="for.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/for.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="44" column="29" lean-forward="true" selection-start-line="29" selection-end-line="44" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="openweb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/openweb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -38,34 +50,20 @@
       <file leaf-file-name="git操作.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train/git操作.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aaa.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/aaa.ini">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="read_ini.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/read_ini.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding>
-                <element signature="e#15#24#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diaoyong.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/diaoyong.py">
+      <file leaf-file-name="run_test_common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_test_common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="1350">
+              <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+              <folding>
+                <element signature="e#1#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,9 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/test2.py" />
-        <option value="$PROJECT_DIR$/test/test1.py" />
-        <option value="$PROJECT_DIR$/test/make_report.py" />
         <option value="$PROJECT_DIR$/test/test3.py" />
         <option value="$PROJECT_DIR$/test/liusheng.py" />
         <option value="$PROJECT_DIR$/test/yy.py" />
@@ -128,7 +123,6 @@
         <option value="$PROJECT_DIR$/common/login.py" />
         <option value="$PROJECT_DIR$/train/店铺组设置测试.py" />
         <option value="$PROJECT_DIR$/train/s'd'd.py" />
-        <option value="$PROJECT_DIR$/train/for.py" />
         <option value="$PROJECT_DIR$/train/jqurey语法.py" />
         <option value="$PROJECT_DIR$/train/js获取元素方法.py" />
         <option value="$PROJECT_DIR$/ini/read_ini.py" />
@@ -138,13 +132,17 @@
         <option value="$PROJECT_DIR$/conf/config.ini" />
         <option value="$PROJECT_DIR$/train/js获取元素和jquery语法.py" />
         <option value="$PROJECT_DIR$/train/git操作.py" />
+        <option value="$PROJECT_DIR$/testcase/test_login.py" />
+        <option value="$PROJECT_DIR$/run_test_common.py" />
+        <option value="$PROJECT_DIR$/train/for.py" />
+        <option value="$PROJECT_DIR$/train/openweb.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="692" />
-    <option name="y" value="171" />
-    <option name="width" value="1203" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="872" />
+    <option name="y" value="136" />
+    <option name="width" value="1388" />
     <option name="height" value="1083" />
   </component>
   <component name="ProjectView">
@@ -159,16 +157,6 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
@@ -194,14 +182,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\python\page" />
-      <recent name="D:\python\testcase" />
       <recent name="D:\python\common" />
       <recent name="D:\python\report" />
+      <recent name="D:\python" />
+      <recent name="D:\python\page" />
+      <recent name="D:\python\testcase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,25 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.diaoyong">
-    <configuration name="diaoyong" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/conf" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conf/diaoyong.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.openweb">
     <configuration name="for" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,7 +224,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="js获取元素方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="openweb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,7 +236,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\python\train\js获取元素和jquery语法.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/openweb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -289,56 +260,59 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="read_ini (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for run_test_common.Run_testAll" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/conf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conf/read_ini.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;run_test_common.Run_testAll&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="read_ini" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for test_login.login.test_login" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ini" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ini/read_ini.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.login.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests in run_test_common.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/run_test_common.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.Unittests for run_test_common.Run_testAll" />
+      <item itemvalue="Python tests.Unittests in run_test_common.py" />
+      <item itemvalue="Python tests.Unittests for test_login.login.test_login" />
       <item itemvalue="Python.for" />
-      <item itemvalue="Python.js获取元素方法" />
-      <item itemvalue="Python.read_ini" />
-      <item itemvalue="Python.read_ini (1)" />
-      <item itemvalue="Python.diaoyong" />
+      <item itemvalue="Python.openweb" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.diaoyong" />
-        <item itemvalue="Python.read_ini (1)" />
-        <item itemvalue="Python.read_ini" />
-        <item itemvalue="Python.js获取元素方法" />
+        <item itemvalue="Python.openweb" />
         <item itemvalue="Python.for" />
+        <item itemvalue="Python tests.Unittests for test_login.login.test_login" />
+        <item itemvalue="Python tests.Unittests in run_test_common.py" />
+        <item itemvalue="Python tests.Unittests for run_test_common.Run_testAll" />
       </list>
     </recent_temporary>
   </component>
@@ -356,52 +330,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_login_case_login_test_login - 2020.06.13 at 15h 21m 35s.xml">
-      <configuration name="Unittests for login_case.login.test_login" configurationId="tests" />
+    <history-entry file="Unittests_in_test_login_py - 2020.06.14 at 15h 21m 17s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_case_login_test_login - 2020.06.13 at 15h 22m 03s.xml">
-      <configuration name="Unittests for login_case.login.test_login" configurationId="tests" />
+    <history-entry file="Unittests_for_test_login_login - 2020.06.14 at 15h 22m 48s.xml">
+      <configuration name="Unittests for test_login.login" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_case_login - 2020.06.13 at 15h 25m 05s.xml">
-      <configuration name="Unittests for login_case.login" configurationId="tests" />
+    <history-entry file="Unittests_for_run_test_common_login - 2020.06.14 at 15h 23m 52s.xml">
+      <configuration name="Unittests for run_test_common.login" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 15h 31m 30s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_for_run_test_common_login1_test_login - 2020.06.14 at 15h 24m 13s.xml">
+      <configuration name="Unittests for run_test_common.login1.test_login" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 15h 48m 43s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_for_run_test_common_Run_testAll - 2020.06.14 at 15h 24m 52s.xml">
+      <configuration name="Unittests for run_test_common.Run_testAll" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 15h 51m 26s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_in_run_test_common_py - 2020.06.14 at 15h 25m 30s.xml">
+      <configuration name="Unittests in run_test_common.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 15h 54m 54s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_in_run_test_common_py - 2020.06.14 at 15h 28m 38s.xml">
+      <configuration name="Unittests in run_test_common.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 15h 57m 34s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_in_run_test_common_py - 2020.06.14 at 15h 34m 21s.xml">
+      <configuration name="Unittests in run_test_common.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 16h 02m 44s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_in_run_test_common_py - 2020.06.14 at 15h 34m 55s.xml">
+      <configuration name="Unittests in run_test_common.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_login_case_py - 2020.06.13 at 16h 05m 14s.xml">
-      <configuration name="Unittests in login_case.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_login_login_test_login - 2020.06.14 at 15h 35m 18s.xml">
+      <configuration name="Unittests for test_login.login.test_login" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="698" y="109" width="1110" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7293447" visible="true" weight="0.11822985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7293447" visible="true" weight="0.16666667" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32739726" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36467236" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35068494" />
       <window_info id="Structure" order="1" sideWeight="0.27065527" side_tool="true" weight="0.19550858" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.31766382" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3295905" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.51643836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5150685" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -417,7 +391,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcase/test01_store_group.py</url>
+          <url>file://$PROJECT_DIR$/testcase/store_group.py</url>
           <line>7</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -429,19 +403,16 @@
           <line>9</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/testcase/test_login.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="&quot;email&quot;,&quot;port&quot;" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/pip3.6-script.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/chrome/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -590,16 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/run_test_common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/excel_common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -631,28 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/test01_store_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#193#4252#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/login_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#289#935#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -674,13 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/for.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -735,10 +667,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/store_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1441">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/for.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_test_common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/openweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train/git操作.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="150">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
